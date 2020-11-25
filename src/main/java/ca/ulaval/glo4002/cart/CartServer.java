@@ -36,7 +36,7 @@ public class CartServer implements Runnable {
     }
 
     private void startServer() {
-        Server server = new Server(PORT);
+        Server server = new Server();
         ServletContextHandler contextHandler = new ServletContextHandler(server, "/");
         contextHandler.addFilter(EntityManagerContextFilter.class, "/*", EnumSet.of(DispatcherType.REQUEST));
 

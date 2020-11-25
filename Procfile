@@ -1,0 +1,1 @@
+web: java -Dport=$PORT -Dstore=memory  -jar target/cart-server-1.0.0-SNAPSHOT.jar
